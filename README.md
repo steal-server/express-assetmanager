@@ -61,7 +61,7 @@ Make sure to check out [connect-assetmanager-handlers](http://github.com/mape/co
     Time per request:       1.082 [ms] (mean, across all concurrent requests)
     Transfer rate:          91437.43 [Kbytes/sec] received
 
-## Options
+## Asset Options
 ### path (string) - required
 The path to the folder containing the files.
 
@@ -135,6 +135,15 @@ This means that there are no checks for file changes and the cache will therefor
 ### debug (boolean)
 When debug is set to true the files will not be minified, but they will be grouped into one file and modified.
 
+
+## Using uglify-js instead of jsmin
+If you prefer uglify-js to jsmin (the default javascript minifier), you can
+use uglify instead by doing the following:
+
+1. Add ``uglify-js`` to your project's package.json
+2. Pass in ``{ jsMinifier: 'uglify-js'}`` as a second argument to ``assetManager()``.
+
+
 ## Example usage
     var sys = require('sys');
     var fs = require('fs');
@@ -188,7 +197,9 @@ When debug is set to true the files will not be minified, but they will be group
         }
     };
 
-    var assetsManagerMiddleware = assetManager(assetManagerGroups);
+    var options = { jsMinifier: 'jsmin' };
+
+    var assetsManagerMiddleware = assetManager(assetManagerGroups, options);
     Server.use('/'
         , assetsManagerMiddleware
         , Connect.static(root)
