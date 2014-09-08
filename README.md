@@ -8,7 +8,7 @@ Middleware for Connect (node.js) for handling your static assets.
 
 Via [npm](http://github.com/isaacs/npm):
 
-    $ npm install connect-assetmanager
+    $ npm install connect-assetmanager-chingon
 
 ## Handy pre/post hooks
 
