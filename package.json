@@ -1,5 +1,5 @@
 {
-  "name" : "connect-assetmanager",
+  "name" : "connect-assetmanager-chingon",
   "description" : "Middleware for Connect (node.js) for handling your static assets.",
   "version" : "0.0.29",
   "author" : "Mathias Pettersson <mape@mape.me>",
