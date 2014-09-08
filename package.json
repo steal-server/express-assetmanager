@@ -1,14 +1,30 @@
 {
   "name" : "connect-assetmanager",
   "description" : "Middleware for Connect (node.js) for handling your static assets.",
-  "version" : "0.0.28",
+  "version" : "0.0.29",
   "author" : "Mathias Pettersson <mape@mape.me>",
-  "keywords": ["build", "assets", "css", "javascript"],
-  "engines" : ["node"],
-  "directories" : { "lib" : "./lib" },
+  "contributors": [
+	"Sinuhé Coronel <lesmo@lesmo.com.mx> (http://www.lesmo.com.mx)",
+	"Aaron Franks (http://aaronfranks.com)"
+  ],
+  "keywords": [
+	"build",
+	"assets",
+	"css",
+	"javascript"
+  ],
+  "engines" : [
+    "node"
+  ],
+  "directories" : {
+    "lib" : "./lib"
+  },
   "main" : "./lib/assetmanager",
   "repository" : [
-    { "type":"git", "url":"http://github.com/mape/connect-assetmanager.git" }
+    {
+		"type": "git",
+		"url": "https://github.com/lesmo/connect-assetmanager.git"
+	}
   ],
   "dependencies" : {
     "request" : ">=0.10.0",
