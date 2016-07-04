@@ -1,11 +1,12 @@
 {
-  "name"        : "connect-assetmanager-chingon",
+  "name"        : "connect-assetmanager-live",
   "description" : "Middleware for Connect (node.js) for handling your static assets.",
   "version"     : "0.0.29",
   "author"      : "Mathias Pettersson <mape@mape.me>",
   "contributors": [
     "Sinuhé Coronel <lesmo@lesmo.com.mx> (http://www.lesmo.com.mx)",
-    "Aaron Franks (http://aaronfranks.com)"
+    "Aaron Franks (http://aaronfranks.com)",
+    "Jeffrey van Norden <jeffreyvannorden@gmail.com> (https://www.grexx.net)"
   ],
   "keywords"    : [
     "build",
