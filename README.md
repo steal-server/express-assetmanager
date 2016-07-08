@@ -1,9 +1,7 @@
 # connect-assetmanager
 
-Middleware for Connect (node.js) for handling your static assets.
-
 ## In this fork
-This fork make sure the generateCache function is exposed so you can call it manually. Please see the example below
+This fork makes sure the generateCache function is exposed so you can call it manually. See the example below.
 
 ```javascript
 
@@ -21,6 +19,8 @@ something.on('someSpecialEvent', function() {
 });
 
 ```
+
+Middleware for Connect (node.js) for handling your static assets.
 
 <img src="http://mape.me/assetmanager.png" alt="">
 
