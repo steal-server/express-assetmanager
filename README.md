@@ -2,6 +2,26 @@
 
 Middleware for Connect (node.js) for handling your static assets.
 
+## In this fork
+This fork make sure the generateCache function is exposed so you can call it manually. Please see the example below
+
+```javascript
+
+var express      = require('express'),
+    app          = express(),
+    AssetManager = require('connect-assetmanager-live'),
+    assetManager = {},
+    settings     = {...your.settings...};
+
+
+app.use(AssetManager.call(assetManager, settings));
+
+something.on('someSpecialEvent', function() {
+    assetManager.generateCache();
+});
+
+```
+
 <img src="http://mape.me/assetmanager.png" alt="">
 
 ## Installation
