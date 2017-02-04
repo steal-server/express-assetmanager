@@ -27,6 +27,9 @@
     "step": ">=0.0.6",
     "uglify-js": "2.7.0"
   },
+  "devDependencies": {
+    "express": "^4.0.0"
+  },
   "engines": {
     "node": ">=6.0.0"
   }
